@@ -18,8 +18,7 @@ fn main() {
     for character in word.chars() {
         final_word = final_word + letters_in_word.get(&character).unwrap();
     }
-    println!("{}", word);
-    println!("{}", final_word);
+    println!("{}", format!("The word `{}` has been randomized to: {}", word, final_word));
 }
 
 fn randomize_character(character: &char) -> String {
